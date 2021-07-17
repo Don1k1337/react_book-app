@@ -4,7 +4,8 @@ import { useQuery } from "react-query";
 import { getAllBooks } from "../api";
 import { BookItem } from "./BookItem";
 import Loader from "react-loader-spinner";
-import { Table } from 'antd';
+
+
 
 export const BooksList = () => {
     const { data, error, isLoading, isError } = useQuery("books", getAllBooks);
@@ -28,6 +29,7 @@ export const BooksList = () => {
                 {data.map(({ author, title, id }) => (
                     <BookItem author={author} title={title} key={id} id={id} />
                     ))}
+
             </Flex>
         </Container>
     );

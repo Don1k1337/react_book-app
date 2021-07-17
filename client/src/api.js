@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 export const getAllBooks = async () => {
     const response = await fetch(`${process.env.REACT_APP_API_SERVER}/books`);
 

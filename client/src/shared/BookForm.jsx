@@ -27,7 +27,7 @@ export const BookForm = ({ defaultValues, onFormSubmit, isLoading }) => {
                 />
             </Box>
             <Button backgroundColor="#277f33" variant="primary" mr={2}>
-                { isLoading ? <Loader type="ThreeDots" color="#fff" height={10} /> : "Submit" }
+                { isLoading ? <Loader type="ThreeDots" color="#fff" height={10} /> : "Create" }
             </Button>
         </form>
     );

@@ -4,6 +4,8 @@ import { useMutation, useQueryClient } from "react-query";
 import { removeBook } from "../api";
 import Loader from "react-loader-spinner"
 
+
+
 export const BookItem = ({id, title, author }) => {
     const queryClient = useQueryClient()
     const { mutateAsync, isLoading } = useMutation(removeBook)
@@ -14,8 +16,7 @@ export const BookItem = ({id, title, author }) => {
     }
 
     return (
-        <Flex key={id} p={3} width="100%" alignItems="center">
-
+        <Flex key={id} p={3} m={4} width="70%" alignItems="center">
             <Link component={StyledLink} to={`/update-book/${id}`} mr="auto">{title}</Link>
             <Text>{author}</Text>
             <Button backgroundColor="#cc1c28" onClick={remove} ml="5">
