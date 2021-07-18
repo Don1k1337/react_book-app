@@ -25,12 +25,12 @@ export const BooksList = () => {
     }
     return (
         <Container>
-            <Flex flexDirection="column" alignItems="center">
+            {/*<Flex flexDirection="column" alignItems="center">*/}
                 {data.map(({ author, title, id }) => (
                     <BookItem author={author} title={title} key={id} id={id} />
                     ))}
 
-            </Flex>
+            {/*</Flex>*/}
         </Container>
     );
 
