@@ -4,6 +4,8 @@ import { useQuery } from "react-query";
 import { getAllBooks } from "../api";
 import { BookItem } from "./BookItem";
 import Loader from "react-loader-spinner";
+import {Table} from "antd";
+import React from "react";
 
 
 
@@ -25,11 +27,10 @@ export const BooksList = () => {
     }
     return (
         <Container>
-            {/*<Flex flexDirection="column" alignItems="center">*/}
-                {data.map(({ author, title, id }) => (
-                    <BookItem author={author} title={title} key={id} id={id} />
-                    ))}
-
+            {/*<Flex marginTop="40px">*/}
+            {data.map(({ author, title, id }) => (
+                <BookItem author={author} title={title} key={id} id={id} />
+            ))}
             {/*</Flex>*/}
         </Container>
     );

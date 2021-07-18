@@ -1,14 +1,3 @@
 {
-  "books": [
-    {
-      "id": "yLSMsySU",
-      "title": "Clap When You  Land",
-      "author": "Elizabeth Acevedo"
-    },
-    {
-      "id": "bQH-bDyK",
-      "title": "Blind Descent: The Quest to Discover the Deepest Place on Earth",
-      "author": "James M. Tabor"
-    }
-  ]
+  "books": []
 }

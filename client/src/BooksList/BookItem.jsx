@@ -6,9 +6,6 @@ import Loader from "react-loader-spinner"
 import { Table } from 'antd';
 import React from "react";
 
-
-
-
 export const BookItem = ({id, title, author }) => {
     const queryClient = useQueryClient()
     const { mutateAsync, isLoading } = useMutation(removeBook)
@@ -55,4 +52,5 @@ export const BookItem = ({id, title, author }) => {
         // </Flex>
 
     );
+
 };
